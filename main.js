@@ -28,6 +28,6 @@ let form = document.querySelector('#conversion-form');
 
         .then(
             response =>
-            (output.value = (response.ticker.price * input.value))
+            (output.value = ((response.ticker.price * input.value)).toFixed(2))
         );
   });
